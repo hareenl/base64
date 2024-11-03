@@ -1,0 +1,92 @@
+/* General Page Settings */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Input TextArea Settings */
+textarea {
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Button Styling */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%;   /* Slightly reduce width for better alignment on desktop */
+    text-align: center;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Flexbox for button alignment */
+.controls {
+    display: flex;              /* Flexbox for horizontal alignment */
+    justify-content: space-between;  /* Even space between buttons */
+    flex-wrap: wrap;            /* Wrap buttons to stack if necessary */
+}
+
+/* File input field */
+input[type="file"] {
+    margin: 10px 0;
+}
+
+/* Download link styling */
+a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Divider line styling */
+hr {
+    margin: 20px 0;
+}
+
+/* Media query to stack buttons vertically on small mobile screens */
+@media (max-width: 500px) {
+    button {
+        width: 100%;   /* Full width for buttons on small screens */
+        margin-bottom: 10px;    /* Add spacing when stacking vertically */
+    }
+
+    .controls {
+        flex-direction: column;  /* Stack buttons vertically on mobile screens */
+        align-items: center;
+    }
+}
