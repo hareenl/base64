@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple Base64 Encoder and Decoder for text and files.">
+  <title>Base64 Encoder/Decoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Title -->
+    <h1>Base64 Encode & Decode</h1>
+    
+    <!-- Text Encoding/Decoding Section -->
+    <div class="text-section">
+      <textarea id="input-text" placeholder="Enter text to Encode/Decode here..."></textarea>
+      <div class="controls">
+        <button id="encode-text-btn">Encode Text as Base64</button>
+        <button id="decode-text-btn">Decode Base64</button>
+      </div>
+    </div>
+
+    <!-- Output section for displaying results -->
+    <div class="output-section">
+      <label for="output-text">Output:</label>
+      <textarea id="output-text" readonly placeholder="Result will appear here..."></textarea>
+    </div>
+
+    <hr>
+
+    <!-- File Uploading and Encoding/Decoding -->
+    <div class="file-section">
+      <input type="file" id="file-input">
+      <div class="controls">
+        <button id="encode-file-btn">Encode File as Base64</button>
+        <button id="decode-file-btn">Decode Base64 to File</button>
+      </div>
+
+      <!-- Hidden download link -->
+      <a id="download-link" style="display: none;">Download File</a>
+    </div>
+  </div>
+
+  <!-- JavaScript to handle logic -->
+  <script src="app.js"></script>
+</body>
+</html>
